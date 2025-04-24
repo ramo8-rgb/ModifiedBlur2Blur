@@ -29,8 +29,7 @@
 
 
 > **Abstract**: This paper presents Modified Blur2Blur, an innovative framework for training camera-specific deblurring algorithms. Our key insight is to transform challenging blur patterns into more tractable ones before deblurring. Using unpaired blurry ($\mathcal{B}$) and sharp ($\mathcal{S}$) images from a target camera, we learn a mapping $G$ from the camera's unknown blur domain $C$ to a known domain $C'$. A critical modification replaces traditional LeakyReLU activations with SiLU (Swish) in both generator and discriminator networks, improving gradient flow and detail preservation. Experiments across multiple benchmarks show our method outperforms state-of-the-art approaches by up to 2.91 dB PSNR when combined with pre-trained models. The framework is practical for real-world applications, requiring only simple data collection from the target camera.Image deblurring has been extensively studied through both classical non-learning methods and modern machine learning approaches. Contemporary learning-based techniques can be classified according to their training data requirements: paired, synthetic, or unpaired data. We review significant contributions from each category below.
-This link provides access to our modified code
-\href{https://github.com/ramo8-rgb/ModifiedBlur2Blur.com}{}
+
 
 
 Details of the model architecture and experimental results can be found in [our paper](https://arxiv.org/abs/2403.16205):
