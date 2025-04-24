@@ -1,4 +1,4 @@
-# Official Pytorch Implementation of "Blur2Blur: Blur Conversion for Unsupervised Image Deblurring on Unknown Domains" [(CVPR'24)](https://cvpr.thecvf.com/)
+# Official Pytorch Implementation of "ModifiedModifiedBlur2Blur: Blur Conversion for Unsupervised Image Deblurring on Unknown Domains" [(CVPR'24)](https://cvpr.thecvf.com/)
 
 [![arXiv](https://img.shields.io/badge/arXiv-2403.16205-red?logo=arxiv&logoColor=red)](https://arxiv.org/abs/2403.16205)
 [![homepage](https://img.shields.io/badge/project-Homepage-blue?logo=Homepage&logoColor=blue)](https://zero1778.github.io/blur2blur/)
@@ -25,7 +25,7 @@
     <img width="1100" alt="teaser" src="assets/teaser.png"/>
 </div>
 
-<b>TL;DR</b>: Blur2Blur converts images from unknown blur into a known blur. This version retains the original content while applying a different blur kernel that has been effectively trained and captured by supervision deblurring models.
+<b>TL;DR</b>: ModifiedModifiedBlur2Blur converts images from unknown blur into a known blur. This version retains the original content while applying a different blur kernel that has been effectively trained and captured by supervision deblurring models.
 
 
 > **Abstract**: This paper presents an innovative framework designed to train an image deblurring algorithm tailored to a specific camera device. This algorithm works by transforming a blurry input image, which is challenging to deblur, into another blurry image that is more amenable to deblurring. The transformation process, from one blurry state to another, leverages unpaired data consisting of sharp and blurry images captured by the target camera device. Learning this blur-to-blur transformation is inherently simpler than direct blur-to-sharp conversion, as it primarily involves modifying blur patterns rather than the intricate task of reconstructing fine image details. The efficacy of the proposed approach has been demonstrated through comprehensive experiments on various benchmarks, where it significantly outperforms state-of-the-art methods both quantitatively and qualitatively.
@@ -37,7 +37,7 @@ Details of the model architecture and experimental results can be found in [our 
 @inproceedings{pham2024blur2blur,
  author={Pham, Bang-Dang and Tran, Phong and Tran, Anh and Pham, Cuong and Nguyen, Rang and Hoai, Minh},
  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
- title={Blur2Blur: Blur Conversion for Unsupervised Image Deblurring on Unknown Domains},
+ title={ModifiedBlur2Blur: Blur Conversion for Unsupervised Image Deblurring on Unknown Domains},
  year={2024}
 }
 ```
@@ -48,7 +48,7 @@ Details of the model architecture and experimental results can be found in [our 
 ## Table of contents
 1. [Getting Started](#getting-started)
 2. [Datasets](#datasets-floppy_disk)
-3. [Blur2Blur](#blur2blur-rocket)
+3. [ModifiedBlur2Blur](#blur2blur-rocket)
 4. [Results](#results-trophy)
 5. [Acknowledgments](#acknowledgments)
 6. [Contacts](#contacts-mailbox_with_mail)
@@ -64,8 +64,8 @@ Details of the model architecture and experimental results can be found in [our 
 ### Installation
 Install dependencies:
 ```shell
-git clone https://github.com/VinAIResearch/Blur2Blur
-cd Blur2Blur
+git clone https://github.com/VinAIResearch/ModifiedBlur2Blur
+cd ModifiedBlur2Blur
 
 conda create -n blur2blur python=3.9  
 conda activate blur2blur  
@@ -106,7 +106,7 @@ where:
 * <b>trainC, trainD</b>: Blur/Sharp images from the Known Blur dataset for the target blur domain.
 * <b>testA</b>: Blurry images from the `test-set` of the Unknown Blur dataset.
 
-## Blur2Blur :rocket:
+## ModifiedBlur2Blur :rocket:
 
 ### Training
 To train the model:
@@ -124,7 +124,7 @@ or
 bash ./scripts/train.sh
 ```
 
-### Using Blur2Blur
+### Using ModifiedBlur2Blur
 To evaluate the model:
 ```.bash
 python test.py --dataroot datasets/GoPro/b2b_exp/RB2V_GOPRO_filter \
@@ -145,7 +145,7 @@ bash ./scripts/test.sh
 For more interactive results, you can take a look at my project page: https://zero1778.github.io/blur2blur/
 
 ## Acknowledgments
-We would like to extend our gratitude to the following implementations for their contributions to the development of Blur2Blur:
+We would like to extend our gratitude to the following implementations for their contributions to the development of ModifiedBlur2Blur:
 
 - [pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) for providing the foundational code model.
 - [uvcgan2](https://github.com/LS4GAN/uvcgan2) for helping to enhance the baseline code.
