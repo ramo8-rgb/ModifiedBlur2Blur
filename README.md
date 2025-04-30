@@ -1,4 +1,4 @@
-# Official Pytorch Implementation of "ModifiedModifiedBlur2Blur: Blur Conversion for Unsupervised Image Deblurring on Unknown Domains" [(CVPR'24)](https://cvpr.thecvf.com/)
+# Official Pytorch Implementation of "ModifiedBlur2Blur: Blur Conversion for Unsupervised Image Deblurring on Unknown Domains" [(CVPR'24)](https://cvpr.thecvf.com/)
 
 [![arXiv](https://img.shields.io/badge/arXiv-2403.16205-red?logo=arxiv&logoColor=red)](https://arxiv.org/abs/2403.16205)
 [![homepage](https://img.shields.io/badge/project-Homepage-blue?logo=Homepage&logoColor=blue)](https://zero1778.github.io/blur2blur/)
